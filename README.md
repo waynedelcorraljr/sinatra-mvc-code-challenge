@@ -6,7 +6,7 @@
 ## Part 2: Coding Challenge - Expanding the Online Tea Shop
 * A tea-brewing shop asks you to build them a web application that lets their customers place orders online. Last week you familiariazed yourself with Sinatra, the web framework you will use to build the app. This week, you will create a VERY basic version of the tea ordering system.
 1. Use the `corneal` gem to quickly spin up a Sinatra project skeleton.
-2. Create db tables and corresponding model classes for the `tea` and `order` models. What naming pattern do you need to adhere to for ActiveRecord to do its magic? Why? (think back to dynamic ORMs). Note: `tea` belongs to `order`, `order` has many `tea`.
+2. Create db tables and corresponding model classes for the `tea` and `order` models. What naming pattern between classes and tables do you need to adhere to for ActiveRecord to do be able to relate them? Why? (think back to dynamic ORMs). Note: `tea` belongs to `order`, `order` has many `tea`.
 3. When we test our routes, we want them to return data. Consider making a `seeds` file that creates some new tea data in the db when run. Otherwise, find another way to add a few tea entries to the db.
 4. Create a controller for your `tea` model with a route `get /teas`. This route should return a heading "Teas available on [today's date], and then should list all available teas.
 5. If you didn't in the previous step, create a view with some html to display the result. Consider two things: How will you pass the tea data from the controller to the view to display, and how will you display the current time (which requires ruby) in the view file?
