@@ -1,4 +1,4 @@
-# Sinatra Introduction
+# Sinatra MVC
 
 ## Part 1: Conceptual Question
 * Describe the responsibility of each component in an MVC application architecture, as well as what programming languages we use in each component
