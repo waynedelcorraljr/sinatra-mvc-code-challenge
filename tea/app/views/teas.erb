@@ -1,0 +1,10 @@
+<h1>Teas avaialable on <%= Date.today %> </h1>
+
+<% Tea.all.each do |tea| %>
+    <h3> <%= tea.name %> </h3>
+    <form method="POST" action="/order">
+    <input type="text" name="order">
+    <input type="submit" value="Gimme Tea">
+    </form>
+<% end %>
+
